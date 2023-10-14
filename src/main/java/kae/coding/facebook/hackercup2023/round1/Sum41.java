@@ -12,6 +12,7 @@ import java.util.*;
 public class Sum41 {
   public static void main(String[] args) throws IOException {
     long start = System.currentTimeMillis();
+    precompute();
     try (BufferedReader reader = new BufferedReader(new FileReader(args[0]));
         PrintWriter writer = getWriter(args)) {
       int t = Integer.parseInt(reader.readLine());
@@ -35,7 +36,6 @@ public class Sum41 {
   private static void solve(int caseNumber, BufferedReader reader, PrintWriter writer)
       throws IOException {
     int n = Integer.parseInt(reader.readLine());
-    precompute();
     List<Integer> res = solve(n);
     if (res == null) {
       writer.printf("Case #%d: -1\n", caseNumber);
