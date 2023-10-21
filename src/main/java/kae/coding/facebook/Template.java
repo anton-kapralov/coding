@@ -32,7 +32,8 @@ public class Template {
         new OutputStreamWriter(new FileOutputStream(args[0].replace("input", "output"))));
   }
 
-  private static void solve(int caseNumber, BufferedReader reader, PrintWriter writer) {
+  private static void solve(int caseNumber, BufferedReader reader, PrintWriter writer)
+      throws IOException {
     writer.printf("Case #%d: \n", caseNumber);
   }
 
