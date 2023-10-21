@@ -134,11 +134,10 @@ public class SecondFriend2 {
       }
     }
 
-//    for (int[] ints : map) {
-//      System.out.println(Arrays.toString(ints));
-//    }
-//    System.out.println();
+    //    for (int[] ints : map) {
+    //      System.out.println(Arrays.toString(ints));
+    //    }
+    //    System.out.println();
     return true;
   }
-
 }

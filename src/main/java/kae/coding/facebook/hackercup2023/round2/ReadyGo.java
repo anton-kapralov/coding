@@ -1,12 +1,18 @@
 package kae.coding.facebook.hackercup2023.round2;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
 
-record Index2D(int r, int c) { }
+record Index2D(int r, int c) {}
 
 /** */
 public class ReadyGo {
@@ -72,14 +78,20 @@ public class ReadyGo {
         visited[i][j] = true;
         boolean[][] visitedDots = new boolean[n][m];
         Deque<int[]> q = new ArrayDeque<>();
-        q.add(new int[]{i, j});
+        q.add(new int[] {i, j});
         while (!q.isEmpty()) {
           int[] idx = q.removeFirst();
           for (int[] dir : dirs) {
             int r = idx[0] + dir[0];
             int c = idx[1] + dir[1];
 
-            if (r < 0 || r >= n || c < 0 || c >= m || visited[r][c] || visitedDots[r][c] || b[r][c] == 'B') {
+            if (r < 0
+                || r >= n
+                || c < 0
+                || c >= m
+                || visited[r][c]
+                || visitedDots[r][c]
+                || b[r][c] == 'B') {
               continue;
             }
             if (b[r][c] == '.') {
@@ -103,5 +115,4 @@ public class ReadyGo {
 
     return max;
   }
-
 }

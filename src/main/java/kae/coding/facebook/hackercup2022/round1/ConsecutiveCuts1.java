@@ -1,6 +1,12 @@
 package kae.coding.facebook.hackercup2022.round1;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 
 /**
  * You have a deck of NN face-up cards, each displaying a unique integer between 11 and NN.

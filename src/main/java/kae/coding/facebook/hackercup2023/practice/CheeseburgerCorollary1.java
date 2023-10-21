@@ -1,6 +1,12 @@
 package kae.coding.facebook.hackercup2023.practice;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 
 /** */
 public class CheeseburgerCorollary1 {

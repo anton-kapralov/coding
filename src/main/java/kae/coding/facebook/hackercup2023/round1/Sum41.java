@@ -1,12 +1,23 @@
 package kae.coding.facebook.hackercup2023.round1;
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <a href="https://www.facebook.com/codingcompetitions/hacker-cup/2023/round-1/problems/B1">Problem
- * B1</a>
- * <a href="https://www.facebook.com/codingcompetitions/hacker-cup/2023/round-1/problems/B2">Problem
+ * B1</a> <a
+ * href="https://www.facebook.com/codingcompetitions/hacker-cup/2023/round-1/problems/B2">Problem
  * B2</a>
  */
 public class Sum41 {
