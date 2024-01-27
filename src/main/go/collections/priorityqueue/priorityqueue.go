@@ -16,7 +16,7 @@ type priorityQueue[T any] struct {
 }
 
 func (pq *priorityQueue[T]) Peek() T {
-	return pq.items[len(pq.items)-1]
+	return pq.items[0]
 }
 
 func (pq *priorityQueue[T]) Push(x any) {
@@ -38,7 +38,7 @@ func (pq *priorityQueue[T]) Len() int {
 }
 
 func (pq *priorityQueue[T]) Less(i, j int) bool {
-	return !pq.less(pq.items[i], pq.items[j])
+	return pq.less(pq.items[i], pq.items[j])
 }
 
 func (pq *priorityQueue[T]) Swap(i, j int) {
